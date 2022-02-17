@@ -1,0 +1,11 @@
+# Commands to start on workspace startup
+image:
+  file: .gitpod.Dockerfile
+tasks:
+  - name: Terminal
+    command: |
+      bash
+# Ports to expose on workspace startup
+ports:
+  - port: 23000
+    onOpen: open-preview
