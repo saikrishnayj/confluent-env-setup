@@ -1,4 +1,4 @@
-FROM uubuntu:18.04
+FROM ubuntu:18.04
 USER root
 RUN apt-get update && apt-get install -y ca-certificates curl apt-transport-https lsb-release gnupg git && apt-get clean && rm -rf /var/cache/apt/* && rm -rf /var/lib/apt/lists/* && rm -rf /tmp/*
 RUN curl -fsSL https://get.docker.com | bash
